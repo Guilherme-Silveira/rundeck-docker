@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+<!--
+<node name="ansible"
+    description="silveira_ansible_machine"
+    osFamily="unix"
+    username="silveira"
+    hostname="35.222.74.183"
+    ssh-authentication="privateKey"
+    ssh-key-storage-path="keys/ansible_server/silveira"
+/>
+-->
+<node name="silveira-mac"
+		description="Macbook"
+		osFamily="unix"
+		username="silveira"
+		hostname="Guilhermes-MacBook-Pro.local"
+		ssh-authentication="password"
+		ssh-password-storage-path="keys/project/bigdata/macbook"
+/>
+</project>

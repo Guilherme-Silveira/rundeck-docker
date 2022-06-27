@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  rundeck:
+    image: guisilveira/rundeck
+    container_name: rundeck
+    ports:
+      - 4440:4440
+    environment:
+      - RUNDECK_GRAILS_URL=http://localhost:4440
+    volumes:
+      - ./data:/home/rundeck/server/data
+      - ./nodes:/nodes
+      - ./ansible:/ansible
+    networks:
+      - elk
+networks:
+  elk:
+    external: true
