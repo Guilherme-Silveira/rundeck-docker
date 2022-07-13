@@ -12,8 +12,3 @@ services:
       - ./data:/home/rundeck/server/data
       - ./nodes:/nodes
       - ./ansible:/ansible
-    networks:
-      - elk
-networks:
-  elk:
-    external: true
